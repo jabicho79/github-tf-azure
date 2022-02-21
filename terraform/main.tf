@@ -15,5 +15,5 @@ module "SA" {
   source   = "./modules/StorageAccount"
   sname    = var.sname
   rgname   = var.rgname
-  location = "${azurerm_resource_group.rg.name}"
+  location = azurerm_resource_group.rg.name
 }
