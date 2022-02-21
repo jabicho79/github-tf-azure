@@ -1,3 +1,3 @@
-rgname   = "rgjay"
+rgname   = "rg-tf-ghaction"
 location = "westeurope"
-sname    = "newsajay"
+sname    = "newsajay01"

@@ -7,7 +7,7 @@ terraform {
   }
 }
 
-/*module "RG" {
+module "RG" {
   source   = "./modules/RG" #A
   rgname   = var.rgname     #B
   location = var.location
@@ -18,4 +18,4 @@ module "SA" {
   rgname     = var.rgname
   location   = var.location
   depends_on = [module.RG]
-}*/
+}
