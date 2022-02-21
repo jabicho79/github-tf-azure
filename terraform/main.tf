@@ -16,6 +16,6 @@ module "SA" {
   source     = "./modules/StorageAccount"
   sname      = var.sname
   rgname     = var.rgname
-  location   = data.azurerm_resource_group.rg.name
+  location   = var.location
   depends_on = [module.RG]
 }
