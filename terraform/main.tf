@@ -6,6 +6,10 @@ terraform {
     key                  = "dev.terraform.tfstate"
   }
 }
+
+data "azurerm_resource_group" "rg" {
+  name = var.resourcegroup_name.rg_name
+}
 module "RG" {
   source   = "./modules/RG" #A
   rgname   = var.rgname     #B
@@ -15,5 +19,5 @@ module "SA" {
   source   = "./modules/StorageAccount"
   sname    = var.sname
   rgname   = var.rgname
-  location = azurerm_resource_group.rg.name
+  location = data.azurerm_resource_group.rg.name
 }
