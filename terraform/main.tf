@@ -2,7 +2,7 @@ terraform {
   backend "azurerm" {
     resource_group_name  = "Mosquis-Test"
     storage_account_name = "mosquissa"
-    container_name       = "tfstatefile"
+    container_name       = "tfstate"
     key                  = "dev.terraform.tfstate"
   }
 }
