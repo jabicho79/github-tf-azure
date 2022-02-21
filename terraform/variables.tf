@@ -6,6 +6,9 @@ variable "rgname" {
 variable "location" {
     description = "Azure location"
     default     = "westeurope"
-    type        = string
-  
+    type        = string  
+}
+variable "sname" {
+  description = "Azure Storage Account"
+  type        = string
 }
