@@ -1,3 +1,3 @@
-# github-tf-azure
+# GITHUB Actions with Terraform+Azure
 
-Pruebas de TF con Azure
+Lab for testing github actions terraform deployments over Azure
