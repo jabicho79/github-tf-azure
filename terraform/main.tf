@@ -8,7 +8,7 @@ terraform {
 }
 
 data "azurerm_resource_group" "rg" {
-  name = var.resourcegroup_name.rg_name
+  name = var.resourcegroup_name
 }
 module "RG" {
   source   = "./modules/RG" #A
