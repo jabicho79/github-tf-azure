@@ -7,9 +7,6 @@ terraform {
   }
 }
 
-data "azurerm_resource_group" "rg" {
-  name = var.resourcegroup_name
-}
 module "RG" {
   source   = "./modules/RG" #A
   rgname   = var.rgname     #B
@@ -20,4 +17,5 @@ module "SA" {
   sname    = var.sname
   rgname   = var.rgname
   location = data.azurerm_resource_group.rg.name
+  depends_on = [RG]
 }
