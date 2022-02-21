@@ -1,3 +1,3 @@
-rgname   = "github-action-demo"
+rgname   = "rgjay"
 location = "westeurope"
-sname    = "newsajms"
+sname    = "newsajay"
