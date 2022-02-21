@@ -13,9 +13,9 @@ module "RG" {
   location = var.location
 }
 module "SA" {
-  source   = "./modules/StorageAccount"
-  sname    = var.sname
-  rgname   = var.rgname
-  location = data.azurerm_resource_group.rg.name
+  source     = "./modules/StorageAccount"
+  sname      = var.sname
+  rgname     = var.rgname
+  location   = data.azurerm_resource_group.rg.name
   depends_on = [RG]
 }
